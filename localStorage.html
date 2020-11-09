@@ -1,0 +1,21 @@
+
+<script>
+
+    var vetor = [
+     1,"a","b","c","d"
+    ];
+
+    localStorage.setItem("vetor", vetor);
+    console.log(localStorage.getItem("vetor"));
+
+    var index = vetor.indexOf("a");
+    vetor.splice(index,1);
+
+    localStorage.setItem("vetor", vetor);
+    console.log(localStorage.getItem("vetor"));
+
+</script>
+
+/* aux.forEach(function (value, index){
+    console.log(value);
+ });*/
